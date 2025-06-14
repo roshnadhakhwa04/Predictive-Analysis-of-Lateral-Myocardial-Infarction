@@ -69,15 +69,21 @@ Cardiovascular diseases, particularly myocardial infarctions, are among the lead
 
 5. Results:
 
-🔍 SVM Results:
-Best Params: {'C': 10, 'gamma': 'auto', 'kernel': 'rbf'}
-Accuracy: 0.6264705882352941
-F1-score (macro): 0.29850991114149006
-F1-score (micro): 0.6264705882352941
-F1-score (weighted): 0.6047380483293796
-Classification Report:
-               precision    recall  f1-score   support
+SVM Results:
 
+Best Params: {'C': 10, 'gamma': 'auto', 'kernel': 'rbf'}
+
+Accuracy: 0.6264705882352941
+
+F1-score (macro): 0.29850991114149006
+
+F1-score (micro): 0.6264705882352941
+
+F1-score (weighted): 0.6047380483293796
+
+Classification Report:
+
+               precision    recall  f1-score   support
          0.0       0.65      0.59      0.62       115
          1.0       0.67      0.78      0.72       184
          2.0       0.09      0.05      0.07        19
@@ -89,15 +95,20 @@ Classification Report:
 weighted avg       0.59      0.63      0.60       340
 
 
-🌳 Random Forest Results:
+Random Forest Results:
 Best Params: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
-Accuracy: 0.7441176470588236
-F1-score (macro): 0.3162773029439696
-F1-score (micro): 0.7441176470588236
-F1-score (weighted): 0.6962314954471817
-Classification Report:
-               precision    recall  f1-score   support
 
+Accuracy: 0.7441176470588236
+
+F1-score (macro): 0.3162773029439696
+
+F1-score (micro): 0.7441176470588236
+
+F1-score (weighted): 0.6962314954471817
+
+Classification Report:
+
+               precision    recall  f1-score   support
          0.0       0.77      0.80      0.79       115
          1.0       0.73      0.88      0.80       184
          2.0       0.00      0.00      0.00        19
