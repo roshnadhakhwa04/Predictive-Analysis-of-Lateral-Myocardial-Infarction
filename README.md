@@ -69,11 +69,47 @@ Cardiovascular diseases, particularly myocardial infarctions, are among the lead
 
 5. Results:
 
-| Metric        | SVM Score | Random Forest Score |
-| ------------- | --------- | ------------------- |
-| Accuracy      | \~X.XX    | \~X.XX              |
-| F1 (Macro)    | \~X.XX    | \~X.XX              |
-| F1 (Weighted) | \~X.XX    | \~X.XX              |
+🔍 SVM Results:
+Best Params: {'C': 10, 'gamma': 'auto', 'kernel': 'rbf'}
+Accuracy: 0.6264705882352941
+F1-score (macro): 0.29850991114149006
+F1-score (micro): 0.6264705882352941
+F1-score (weighted): 0.6047380483293796
+Classification Report:
+               precision    recall  f1-score   support
+
+         0.0       0.65      0.59      0.62       115
+         1.0       0.67      0.78      0.72       184
+         2.0       0.09      0.05      0.07        19
+         3.0       0.14      0.07      0.09        15
+         4.0       0.00      0.00      0.00         7
+
+    accuracy                           0.63       340
+   macro avg       0.31      0.30      0.30       340
+weighted avg       0.59      0.63      0.60       340
+
+
+🌳 Random Forest Results:
+Best Params: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+Accuracy: 0.7441176470588236
+F1-score (macro): 0.3162773029439696
+F1-score (micro): 0.7441176470588236
+F1-score (weighted): 0.6962314954471817
+Classification Report:
+               precision    recall  f1-score   support
+
+         0.0       0.77      0.80      0.79       115
+         1.0       0.73      0.88      0.80       184
+         2.0       0.00      0.00      0.00        19
+         3.0       0.00      0.00      0.00        15
+         4.0       0.00      0.00      0.00         7
+
+    accuracy                           0.74       340
+   macro avg       0.30      0.34      0.32       340
+weighted avg       0.66      0.74      0.70       340
+
+
+✅ Processed dataset saved as processed_data.csv
 
 * **Random Forest** showed slightly better overall accuracy and interpretability via feature importances
 * **SVM** performed competitively and benefited from hyperparameter tuning and scaling
